@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bé tập tính - Bài tập về nhà - 1312276</title>
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Bài tập về nhà: JS căn bản. Sinh viên: 1312276 - Nguyễn Phú Kế</a>
+    </div>
+    </nav>
+    
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4>Bé tập tính</h4>
+            </div>
+            <div class="panel-body">
+                    <table>
+                        <tr class="trow">
+                            <td class="title">Số thứ nhất</td>
+                            <td class="input"><input id="firstNumber" class="form-control" type="text" required onkeyup="checkValid(1)"></td>
+                            <td class="operator">
+                                <input type="radio" name="operator" id="add"> Cộng&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="operator" id="subtract"> Trừ&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+
+                        <tr style="margin: 10px; margin-bottom: 10px!important;" class="trow">
+                            <td class="title">Số thứ hai</td>
+                            <td class="input"><input id="secondNumber" class="form-control" type="text" required onkeyup="checkValid(2)"></td>
+                            <td class="operator">
+                                <input type="radio" name="operator" id="multi"> Nhân&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="operator" id="divide"> Chia&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+
+                        <tr class="trow">
+                            <td class="title">Kết quả</td>
+                            <td class="input"><input type="text" id="result" class="form-control"></td>
+                            <td class="operator">
+                                <button type="button" class="btn btn-info" onclick="doOperation()">Tính</button>
+                            </td>
+                        </tr>
+
+                        <tr class="trow">
+                            <td class="title">Thông báo</td>
+                            <td colspan="2">
+                                <p id="warning-message" class="warning-message">
+                                     
+                                </p>
+                            </td>
+                        </tr>
+                    </table> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+tr {
+    padding: 15px 0px;
+    margin: 10px;
+}
+.trow {
+    height: 60px;
+}
+
+.title {
+    width: 100px;
+}
+
+.input {
+    width: 300px;
+}
+
+.operator {
+    padding-left: 10px;
+}
+
+.warning-message {
+    padding-top: 10px;
+}
+
+.error-element {
+    font-style: italic;
+    color: red;
+}
